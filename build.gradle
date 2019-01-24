@@ -1,0 +1,51 @@
+buildscript {
+	ext {
+		springBootVersion = '2.1.1.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.rnko'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+	maven { url "https://maven.atlassian.com/maven-external/" }
+
+	//maven { url "http://repo.spring.io/libs-release/" }
+}
+
+ext {
+	set('vaadinVersion', '12.0.3')
+}
+configurations {
+	implementation.exclude group: "com.atlassian.ofbiz", module: "entityengine"
+	implementation.exclude group: "webwork", module: "pell-multipart-request"
+}
+
+dependencies {
+	implementation fileTree(dir: 'libs', include: '*.jar')
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'com.vaadin:vaadin-spring-boot-starter'
+	//implementation 'com.atlassian.jira:jira-api:7.7.0'
+	implementation 'log4j:log4j:1.2.17'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "com.vaadin:vaadin-bom:${vaadinVersion}"
+	}
+}

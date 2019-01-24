@@ -1,0 +1,29 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/vaadin-text-field/src/vaadin-text-field.html">
+
+<dom-module id="main-view">
+    <template>
+<style include="shared-styles">
+            :host {
+                display: block;
+            }
+        </style>
+<vaadin-text-field></vaadin-text-field>
+</template>
+
+
+    <script>
+        class MainView extends Polymer.Element {
+            static get is() {
+                return 'main-view';
+            }
+
+            static get properties() {
+                return {
+                    // Declare your properties here.
+                };
+            }
+        }
+        customElements.define(MainView.is, MainView);
+    </script>
+</dom-module>
