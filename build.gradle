@@ -38,6 +38,16 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'com.vaadin:vaadin-spring-boot-starter'
+
+	implementation 'org.webjars.bowergithub.polymer:polymer:2.7.0'
+	implementation 'org.webjars.bowergithub.polymerelements:paper-icon-button:3.0.1'
+
+	implementation 'org.webjars.bowergithub.binhbbbb:harrypotter-progress:1.0.1'
+
+	implementation 'org.webjars.bowergithub.polymerelements:paper-menu-button:3.0.1'
+
+
+	implementation 'org.webjars.bowergithub.web-animations:web-animations-js:2.3.1'
 	//implementation 'com.atlassian.jira:jira-api:7.7.0'
 	implementation 'log4j:log4j:1.2.17'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

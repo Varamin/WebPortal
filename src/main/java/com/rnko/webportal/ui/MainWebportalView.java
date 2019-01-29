@@ -1,12 +1,15 @@
 package com.rnko.webportal.ui;
 
 
+import com.rnko.webportal.ui.views.HarrypotterProgress;
 import com.vaadin.flow.component.applayout.AbstractAppRouterLayout;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.AppLayoutMenu;
 import com.vaadin.flow.component.applayout.AppLayoutMenuItem;
+import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.icon.VaadinIcon;
+import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 
 public class MainWebportalView extends AbstractAppRouterLayout {
@@ -18,6 +21,7 @@ public class MainWebportalView extends AbstractAppRouterLayout {
     protected void configure(AppLayout appLayout, AppLayoutMenu menu) {
         appLayout.setBranding(new Span("RNKO WebPortal"));
         setMenuItem(menu, new AppLayoutMenuItem(VaadinIcon.HOME_O.create(), "HOME", "/issue"));
+
 
     }
 
