@@ -1,7 +1,6 @@
 package com.rnko.webportal.ui;
 
 
-import com.rnko.webportal.ui.views.HarrypotterProgress;
 import com.vaadin.flow.component.applayout.AbstractAppRouterLayout;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.AppLayoutMenu;

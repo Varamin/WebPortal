@@ -87,6 +87,7 @@
     <orderEntry type="library" name="Gradle: org.webjars.bowergithub.polymer:polymer:2.7.0" level="project" />
     <orderEntry type="library" name="Gradle: org.webjars.bowergithub.polymerelements:paper-icon-button:3.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.webjars.bowergithub.polymerelements:paper-menu-button:3.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: io.reactivex:rxjava:1.0.2" level="project" />
     <orderEntry type="library" name="Gradle: org.webjars.bowergithub.web-animations:web-animations-js:2.3.1" level="project" />
     <orderEntry type="library" name="Gradle: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-test:2.1.1.RELEASE" level="project" />
